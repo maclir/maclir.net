@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Screenstamp — maclir</title>
+<meta name="description" content="How Screenstamp came to be: the same big Dell above the same laptop, arranged by hand at every desk.">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0d10" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent:#7dd3fc">
+<div class="page">
+
+  <header class="masthead">
+    <a class="home" href="/">MACLIR</a>
+    <nav><a href="/about.html">About</a></nav>
+  </header>
+
+  <article class="story">
+
+    <div class="story-head">
+      <img class="mark" src="../assets/logos/screenstamp.svg" alt="Screenstamp logo" width="64" height="64">
+      <div>
+        <h1>Screenstamp</h1>
+        <a class="domain" href="https://github.com/maclir/screenstamp">github.com/maclir/screenstamp ↗</a>
+      </div>
+    </div>
+
+    <p class="dek">One big high-resolution Dell, with the laptop tucked underneath it as the second screen. The same arrangement at every desk, and macOS treats each one like it has never seen it before.</p>
+
+    <p class="lede">The setup never changes. Same monitor, same resolution, laptop below rather than beside. But plug into it at a different desk and everything is slightly wrong. The scaling is off. macOS has decided the laptop is to the left. The refresh rate has quietly dropped. So the day starts with five minutes of dragging little blue rectangles around Display Settings.</p>
+
+    <p>What makes it grating is that the knowledge exists. macOS just ties its memory to one specific physical monitor rather than to the shape of the setup, so an identical desk counts as a new one.</p>
+
+    <h2>What it does</h2>
+
+    <p>It installs in one line:</p>
+
+    <p><code>sh -c "$(curl -fsSL https://raw.githubusercontent.com/maclir/screenstamp/main/install.sh)"</code></p>
+
+    <p>Then set a desk up properly once and save it:</p>
+
+    <ul>
+      <li><code>screenstamp save office</code> — records resolution, refresh rate, colour depth, scaling, rotation, enabled state and arrangement.</li>
+      <li><code>screenstamp load office</code> — stamps it onto whatever compatible screens you're plugged into now.</li>
+    </ul>
+
+    <p><em>Stamp</em> is the operative word. A profile is not tied to one physical display, so a layout saved at one desk lands correctly on a matching setup anywhere else. It is a small tool that fixes one annoyance completely. It is on GitHub and installs in one line.</p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="https://github.com/maclir/screenstamp">View on GitHub ↗</a>
+    </div>
+
+    <dl class="facts">
+      <dt>Status</dt><dd>Open source — <a href="https://github.com/maclir/screenstamp">github.com/maclir/screenstamp</a></dd>
+      <dt>Built with</dt><dd>Shell, macOS, <code>displayplacer</code></dd>
+    </dl>
+
+  </article>
+
+  <footer class="foot">
+    <span><a href="mailto:maclir@gmail.com">Alireza Pazirandeh</a></span>
+    <span><a href="https://github.com/maclir">GitHub</a> · <a href="https://www.linkedin.com/in/maclir/">LinkedIn</a></span>
+  </footer>
+
+</div>
+</body>
+</html>

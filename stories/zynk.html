@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zynk — maclir</title>
+<meta name="description" content="How Zynk came to be: everyone who trades is a vibe trader, so I built one without the emotions.">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0d10" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent:#34d399">
+<div class="page">
+
+  <header class="masthead">
+    <a class="home" href="/">MACLIR</a>
+    <nav><a href="/about.html">About</a></nav>
+  </header>
+
+  <article class="story">
+
+    <div class="story-head">
+      <img class="mark" src="../assets/logos/zynk.svg" alt="Zynk logo" width="64" height="64">
+      <div>
+        <h1>Zynk</h1>
+        <span class="domain">Private — running on live money</span>
+      </div>
+    </div>
+
+    <p class="dek">I have been vibe trading for years. So has everyone else who trades, whether they admit it or not. I wanted to see what happens when you take the emotions out.</p>
+
+    <p class="lede">You read the news, you get a feeling about it, and you act on the feeling. Afterwards you explain the decision with fundamentals, but that is not where it came from. The feeling also gets worse the more money is involved, because being up or down this week changes what you do next week.</p>
+
+    <p>So Zynk does the same job without any of that. Every few minutes it reads what has been published, forms a view, compares it against the portfolio it already holds, and adjusts. Then it tells me what it did and why in one Slack thread a day, so the reasoning is written down before anyone knows how it turned out.</p>
+
+    <h2>It turned into an engineering problem</h2>
+
+    <p>I expected the interesting part to be the trading. It was not. Several things have to hold at once:</p>
+
+    <ul>
+      <li>The connection to the broker has to stay alive. The gateway has to stay logged in, it gets reset every day, and it can drop in the middle of a decision.</li>
+      <li>The news analysis runs every few minutes, so it has to be cheap. Otherwise the AI bill quietly becomes the most expensive part of the whole thing.</li>
+      <li>The strategy is never finished. Buy, hold, sell, short, options. Every couple of weeks I backtest a new idea and put it in if it holds up.</li>
+    </ul>
+
+    <p>So most of the code is not clever. It is the part that refuses to do something stupid when one of those goes wrong, because in a trading bot a case you did not handle turns into a real loss.</p>
+
+    <p>It is also the only thing here with a machine that never sleeps. The broker gateway has to stay logged in around the clock, and I could not find a way around it.</p>
+
+    <h2>Where it is at</h2>
+
+    <p>It is still running. Some weeks up, some weeks down, and I am not rich yet. The loop of thinking of something, backtesting it, deploying it and watching it meet the market turned out to be the real product. The portfolio is just the scoreboard.</p>
+
+    <dl class="facts">
+      <dt>Status</dt><dd>Private, running live</dd>
+      <dt>Built with</dt><dd>Go, Gemini, Firestore, Cloud Run, Cloud Scheduler, IBKR</dd>
+      <dt>Note</dt><dd>An experiment, not advice. And not a windfall — yet.</dd>
+    </dl>
+
+  </article>
+
+  <footer class="foot">
+    <span><a href="mailto:maclir@gmail.com">Alireza Pazirandeh</a></span>
+    <span><a href="https://github.com/maclir">GitHub</a> · <a href="https://www.linkedin.com/in/maclir/">LinkedIn</a></span>
+  </footer>
+
+</div>
+</body>
+</html>

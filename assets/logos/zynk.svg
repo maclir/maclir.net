@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Zynk">
+  <rect width="64" height="64" rx="14" fill="#08120c"/>
+  <!-- candles the machine reads, and the bolt that acts on them -->
+  <g stroke="#1f6b45" stroke-width="3" stroke-linecap="round">
+    <path d="M14 22 V42"/><path d="M24 27 V47"/><path d="M40 19 V37"/><path d="M50 24 V44"/>
+  </g>
+  <g stroke="#34d399" stroke-width="7" stroke-linecap="round">
+    <path d="M14 28 V36"/><path d="M24 33 V41"/><path d="M40 24 V31"/><path d="M50 30 V38"/>
+  </g>
+  <path d="M35 12 L25 33 H33 L29 52 L41 30 H33 Z" fill="#08120c" stroke="#08120c" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M35 12 L25 33 H33 L29 52 L41 30 H33 Z" fill="#a7f3d0"/>
+</svg>

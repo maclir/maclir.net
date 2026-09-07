@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — maclir</title>
+<meta name="description" content="Twenty-odd years of building things: from staying on the computer past bedtime, to Android, to Go.">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0d10" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <a class="home" href="/">MACLIR</a>
+    <nav><a href="/#work">Projects</a></nav>
+  </header>
+
+  <article class="story">
+
+    <div class="story-head">
+      <div>
+        <h1>About</h1>
+        <span class="domain">Alireza Pazirandeh</span>
+      </div>
+    </div>
+
+    <p class="dek">I started coding at twelve for the wrong reason. It counted as something useful, so I got more time on the computer.</p>
+
+    <p class="lede">Most of those hours went into <a href="https://en.wikipedia.org/wiki/Ragnarok_Online">Ragnarok Online</a>, an MMORPG I took far too seriously. The rest went into web design, back when that meant view-source, break it, reload. CSS did not have a version number yet, and jQuery was the JavaScript library. By the time I moved to Sweden I had worked in most of the web stacks of the day, mostly by breaking them.</p>
+
+    <p>My degree in Gothenburg happened to fall in the first years of Android, so that is what I started building. The apps were mainly for us — my favourite is still a laundry booking app for our student housing, which a few of us got working by reverse engineering their website until it gave up its API.</p>
+
+    <p>Then came a run of startups, where I went from writing Android apps, to leading the Android work, to backend. At one of them we needed a service to sit between our Node.js microservices and the apps talking to them. I have never liked Node on the backend. Some part of me still sees it as a frontend language pushed into backend work so that more people could do backend. I know that is not a fair judgement. It did make us look elsewhere though, and we wanted to learn something new anyway, so we picked Go. I have reached for it ever since.</p>
+
+    <p>After the startups I took a year off to build things I actually wanted. In 2020 I joined Spotify as an engineering manager, and I am still there. The full work history is on <a href="https://www.linkedin.com/in/maclir/">LinkedIn</a>.</p>
+
+    <h2>How these get built</h2>
+
+    <p>These days my job is mostly management and tech leadership, so I build in hack weeks and the odd evening. That is what sets the size of a project. If one person cannot finish it, it does not get finished.</p>
+
+    <p>That line has moved recently. Building with agents means one person can finish more, which is the only reason some of these exist at all. Knip sat as an idea for years and then took three days.</p>
+
+    <p>Go turned out to be a good investment there too. It is compiled and strictly typed, so a bad guess usually fails to build rather than reaching production, and the standard library is broad enough that there are not many outside libraries to get wrong.</p>
+
+    <p>The second rule is cost. Everything here has to run for close to nothing: no always-on servers, nothing billing me while I sleep. One Go binary, Firestore for storage with the data models shaped to keep reads and writes down, and servers that scale to zero when nobody is around. Having no budget makes it a more interesting problem to solve, and it means I never have to switch something off to save eight euros a month.</p>
+
+    <p>The third one is not really a rule, more a preference. Almost none of these ask anyone to sign up. Knip, Areh and Hamta are just a link you send someone. Partly that is out of respect for the person I am sharing it with, and partly it is the other two rules again: accounts are a lot of work to build and cost money to run forever.</p>
+
+    <p>None of this was a business plan. Each one was just something that annoyed me enough to spend an evening on.</p>
+
+  </article>
+
+  <footer class="foot">
+    <span><a href="mailto:maclir@gmail.com">Alireza Pazirandeh</a></span>
+    <span><a href="https://github.com/maclir">GitHub</a> · <a href="https://www.linkedin.com/in/maclir/">LinkedIn</a></span>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Screenstamp">
+  <rect width="64" height="64" rx="14" fill="#0d1117"/>
+  <!-- the saved layout: two screens, one stamped onto the other -->
+  <rect x="11" y="18" width="27" height="19" rx="3" fill="none" stroke="#7dd3fc" stroke-width="2.4" opacity=".38"/>
+  <rect x="20" y="27" width="33" height="23" rx="3.5" fill="#0d1117" stroke="#7dd3fc" stroke-width="2.8"/>
+  <path d="M27.5 39.5 L32.5 44.5 L45 31.5" fill="none" stroke="#7dd3fc" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

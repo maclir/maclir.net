@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eqo — maclir</title>
+<meta name="description" content="How Eqo came to be: I started travelling alone in 2020 and wanted to keep more of it than a photo roll.">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0d10" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent:#3b8fd0">
+<div class="page">
+
+  <header class="masthead">
+    <a class="home" href="/">MACLIR</a>
+    <nav><a href="/about.html">About</a></nav>
+  </header>
+
+  <article class="story">
+
+    <div class="story-head">
+      <img class="mark" src="../assets/logos/eqo.png" alt="Eqo logo" width="64" height="64">
+      <div>
+        <h1>Eqo</h1>
+        <span class="domain">Private — built for one user</span>
+      </div>
+    </div>
+
+    <p class="dek">2020 was the year I started travelling a lot, and mostly alone. Journalling was how I made sure the trips didn't just slide past me.</p>
+
+    <p class="lede">You remember less of a trip you took on your own. There is nobody to say <em>do you remember that place</em> to afterwards, so it only survives in whatever you wrote down at the time. I wanted to reflect on where I was while I was still there, and to be able to find the moment again years later.</p>
+
+    <p>I kept it up, in about six different forms. Every one of them was a place to put things. None of them ever asked me anything back. On a good evening I wrote a paragraph about what happened. On a tired one, a sentence. That tells me almost nothing later, because it records the itinerary and not the day.</p>
+
+    <p>What was missing was the second question. The one a good friend asks after you have given them the summary: <em>and how did that actually land?</em></p>
+
+    <h2>What it does</h2>
+
+    <p>Eqo is a Slack bot. I have Slack open all day anyway, so there is no separate app to remember. I write an entry, it reads it, and it asks one thing back. Usually that is enough to get a second paragraph out of me that would never have existed.</p>
+
+    <p>The other half is memory. It searches everything I have written by meaning rather than by keyword, so it can put today next to something from three years ago and point out that this is the fourth time I have felt this way in this month. Those connections are why the archive is worth keeping. I would never have found them by scrolling.</p>
+
+    <p>It exists for the same reason Knip does, and was built the same week. Once something this personal takes an evening instead of a month, you build it.</p>
+
+    <h2>Why it stays private</h2>
+
+    <p>Running it for free and encrypting the entries properly do not go together. To connect today's entry to one from three years ago, Eqo has to be able to read them both, and heavy encryption takes that away. There are ways around it, but I have not put the time in.</p>
+
+    <p>Until I do, it is not something I can hand to anyone else. For now it is just me and my partner Adelheid.</p>
+
+    <dl class="facts">
+      <dt>Status</dt><dd>Private — me and my partner</dd>
+      <dt>Built with</dt><dd>Go, Gemini, Firestore vector search, Cloud Run</dd>
+      <dt>Name</dt><dd>An echo, sound coming back — and Mr. Eko from <em>Lost</em></dd>
+    </dl>
+
+  </article>
+
+  <footer class="foot">
+    <span><a href="mailto:maclir@gmail.com">Alireza Pazirandeh</a></span>
+    <span><a href="https://github.com/maclir">GitHub</a> · <a href="https://www.linkedin.com/in/maclir/">LinkedIn</a></span>
+  </footer>
+
+</div>
+</body>
+</html>

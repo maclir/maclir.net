@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knip — maclir</title>
+<meta name="description" content="How Knip came to be: the payment apps were never the problem. The receipt math before them was.">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0d10" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent:#f59e0b">
+<div class="page">
+
+  <header class="masthead">
+    <a class="home" href="/">MACLIR</a>
+    <nav><a href="/about.html">About</a></nav>
+  </header>
+
+  <article class="story">
+
+    <div class="story-head">
+      <img class="mark" src="../assets/logos/knip.png" alt="Knip logo" width="64" height="64">
+      <div>
+        <h1>Knip</h1>
+        <a class="domain" href="https://knip.app">knip.app ↗</a>
+      </div>
+    </div>
+
+    <p class="dek">Tikkie, Swish and Splitwise are all very good at moving money. None of them tells you who owes what in the first place.</p>
+
+    <p class="lede">That gap bothered me for years. Every one of those apps starts at the moment you already know the number. The step before it — working that number out from a receipt with fourteen lines on it — was still manual, still awkward, and still happening at the table while everyone waited. So we would give up and divide by six, and whoever drank tap water quietly paid for someone else's wine.</p>
+
+    <p>I knew exactly what I wanted. I just kept not building it.</p>
+
+    <h2>Three days</h2>
+
+    <p>Then, over a quiet holiday week in a nearly empty office, I watched a colleague take apart a nasty mobile bug with an agent. He built throwaway tools and diagnostic pages faster than I could follow. The barrier to building had dropped while I was busy putting this off.</p>
+
+    <p>Knip is the first thing I built this way, start to finish. The core was running in 48 hours. Halfway through I rewrote the whole backend from TypeScript to Go. That would normally kill a project's momentum; this time it was just part of the flow. The name is the Dutch <em>knip</em> — a snip, a cut.</p>
+
+    <h2>How it works</h2>
+
+    <p>Photograph the receipt. Gemini reads the merchant, the lines and the prices. Everyone opens the same link and taps what they had. Double-tap a shared dish and it splits. Whoever paid adds their Revolut, Bunq or IBAN, so paying them back is a tap instead of a conversation the next morning.</p>
+
+    <p>There are no accounts, on purpose. The moment you ask for one, half the table opts out and you are back to dividing by six.</p>
+
+    <h2>Then a ski trip</h2>
+
+    <p>I started using it around Amsterdam straight away, and it worked. Then a week of skiing in the Dolomites broke it — not technically, but socially. Settling up after every pizza slice and espresso is worse than not settling up at all. Someone on the trip asked the obvious question: why can't we just bundle these?</p>
+
+    <p>Groups went in that week. Pool the bills, settle only the net difference at the end. Finding a problem and fixing it during the same holiday still feels new to me.</p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="https://knip.app">Open knip.app ↗</a>
+      <a class="btn" href="https://www.linkedin.com/feed/update/urn:li:activity:7422615852144824324/">The original post ↗</a>
+    </div>
+
+    <dl class="facts">
+      <dt>Status</dt><dd>Live at <a href="https://knip.app">knip.app</a></dd>
+      <dt>Built with</dt><dd>Go, Gemini Flash, Firestore, Cloud Run, Alpine.js, Tailwind (server-rendered)</dd>
+      <dt>Name</dt><dd>Dutch <em>knip</em> — a snip, a cut</dd>
+    </dl>
+
+  </article>
+
+  <footer class="foot">
+    <span><a href="mailto:maclir@gmail.com">Alireza Pazirandeh</a></span>
+    <span><a href="https://github.com/maclir">GitHub</a> · <a href="https://www.linkedin.com/in/maclir/">LinkedIn</a></span>
+  </footer>
+
+</div>
+</body>
+</html>
