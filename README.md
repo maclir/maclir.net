@@ -9,7 +9,7 @@ lists are built on.
 ## Develop
 
 ```sh
-make serve   # http://localhost:8080
+make serve   # http://localhost:8081; PORT=… picks another port
 make test    # every page parses, every local link and asset resolves
 ```
 
