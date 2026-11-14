@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Peyk">
+  <rect width="64" height="64" rx="14" fill="#2f54c8"/>
+  <!-- a chat bubble holding the three dots of پ, which double as typing dots -->
+  <mask id="dots">
+    <rect width="32" height="32" fill="#fff"/>
+    <path d="M12.6 7.9 L15.3 10.6 L12.6 13.3 L9.9 10.6 Z" fill="#000"/>
+    <path d="M19.4 7.9 L22.1 10.6 L19.4 13.3 L16.7 10.6 Z" fill="#000"/>
+    <path d="M16.0 13.9 L18.7 16.6 L16.0 19.3 L13.3 16.6 Z" fill="#000"/>
+  </mask>
+  <g transform="translate(8 8) scale(1.5)">
+    <g mask="url(#dots)" fill="#fff">
+      <rect x="3" y="3" width="26" height="21" rx="8"/>
+      <path d="M6.2 20.5 L5.2 29.4 L15.8 22 Z"/>
+    </g>
+  </g>
+</svg>

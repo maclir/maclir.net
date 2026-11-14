@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peyk — maclir</title>
+<meta name="description" content="How Peyk came to be: ideas written on the phone, copied by hand into coding agents on the laptop, until the phone could send them itself.">
+<meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0d10" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body style="--accent:#8aa6ff;--accent-light:#2f54c8">
+<div class="page">
+
+  <header class="masthead">
+    <a class="home" href="/">MACLIR</a>
+    <nav><a href="/about.html">About</a></nav>
+  </header>
+
+  <article class="story">
+
+    <div class="story-head">
+      <img class="mark" src="../assets/logos/peyk.svg" alt="Peyk logo" width="64" height="64">
+      <div>
+        <h1>Peyk</h1>
+        <span class="domain">Private — in daily use</span>
+      </div>
+    </div>
+
+    <p class="dek">Most of my ideas for these projects come when I am away from the laptop. For a while, the laptop was the only place they could go anywhere.</p>
+
+    <p class="lede">I keep a Google Keep checklist for every project. On the bus or in a queue, I add a line: a bug I noticed, a feature someone asked for, a thing to try. Later, at the laptop, I open the coding agent for that project, copy the line in, wait for it to finish, and tick the item off. Then the next one. A project gets one agent at a time, so I also had to remember which ones were still busy.</p>
+
+    <p>That is a lot of copying for something that is already written down.</p>
+
+    <h2>Relay</h2>
+
+    <p>The first fix was a small terminal program called Relay. It read every Keep checklist, showed which projects had an idle agent, and sent the item I picked to that agent. Then it ticked the item off in Keep and suggested the next one: the oldest open item on a project that was free.</p>
+
+    <p>It worked, but it still needed me at the laptop. I could not see which agent had finished, what it had said, or whether its work was committed and pushed, unless I was sitting in front of it.</p>
+
+    <h2>Peyk</h2>
+
+    <p>Three days later I replaced it. Peyk has two parts. A small program on the laptop watches every agent and publishes its state: working, done, or waiting for me, its last reply, and whether its commits are pushed. An app on my phone shows all of it, and sends a notification when an agent finishes or needs an answer.</p>
+
+    <p>The Keep checklists moved into Peyk as an inbox, one queue of ideas per project. From the phone I can send an idea to an idle agent, which starts it on a clean conversation first. I can also reply to an agent, answer its questions, stop it, or push its work. Close the laptop program and the whole thing is offline. Nothing in the cloud runs while I am not using it.</p>
+
+    <p>I built it in one day. By late morning the inbox worked, and from then on I wrote Peyk's own feature requests into it from the phone and sent them to the agent working on Peyk. Showing the pages an agent publishes, attaching a screenshot to an idea, answering an agent's questions without opening the laptop: each one started as a line in that inbox.</p>
+
+    <h2>The name</h2>
+
+    <p><em>Peyk</em> (پیک) is Persian for a courier: someone who carries a message to where it needs to go. The mark is a chat bubble holding the three dots of پ, the letter it starts with. They also look like the dots that show someone is typing.</p>
+
+    <dl class="facts">
+      <dt>Status</dt><dd>Private, in daily use</dd>
+      <dt>Built with</dt><dd>Go, Firestore, Cloud Run, Web Push, passkeys</dd>
+      <dt>Before it</dt><dd>Relay: Python and Google Keep, retired after three days</dd>
+    </dl>
+
+  </article>
+
+  <footer class="foot">
+    <span><a href="mailto:maclir@gmail.com">Alireza Pazirandeh</a></span>
+    <span><a href="https://github.com/maclir">GitHub</a> · <a href="https://www.linkedin.com/in/maclir/">LinkedIn</a></span>
+  </footer>
+
+</div>
+</body>
+</html>
